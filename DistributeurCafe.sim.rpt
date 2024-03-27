@@ -1,0 +1,293 @@
+Simulator report for DistributeurCafe
+Tue Mar 26 11:09:44 2024
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 16.0 us      ;
+; Simulation Netlist Size     ; 94 nodes     ;
+; Simulation Coverage         ;      83.05 % ;
+; Total Number of Transitions ; 2109         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Option                                                                                     ; Setting              ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Simulation mode                                                                            ; Timing               ; Timing        ;
+; Start time                                                                                 ; 0 ns                 ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                 ;               ;
+; Vector input source                                                                        ; DistributeurCafe.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                   ; On            ;
+; Check outputs                                                                              ; Off                  ; Off           ;
+; Report simulation coverage                                                                 ; On                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                  ; Off           ;
+; Detect glitches                                                                            ; Off                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                  ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                 ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      83.05 % ;
+; Total nodes checked                                 ; 94           ;
+; Total output ports checked                          ; 118          ;
+; Total output ports with complete 1/0-value coverage ; 98           ;
+; Total output ports with no 1/0-value coverage       ; 13           ;
+; Total output ports with no 1-value coverage         ; 18           ;
+; Total output ports with no 0-value coverage         ; 15           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |DistributeurCafe|Add3~1                 ; |DistributeurCafe|Add3~1                 ; sumout           ;
+; |DistributeurCafe|Add3~1                 ; |DistributeurCafe|Add3~2                 ; cout             ;
+; |DistributeurCafe|Add3~5                 ; |DistributeurCafe|Add3~5                 ; sumout           ;
+; |DistributeurCafe|Add0~1                 ; |DistributeurCafe|Add0~1                 ; sumout           ;
+; |DistributeurCafe|Add0~1                 ; |DistributeurCafe|Add0~2                 ; cout             ;
+; |DistributeurCafe|Add1~1                 ; |DistributeurCafe|Add1~1                 ; sumout           ;
+; |DistributeurCafe|Add1~1                 ; |DistributeurCafe|Add1~2                 ; cout             ;
+; |DistributeurCafe|Add1~5                 ; |DistributeurCafe|Add1~5                 ; sumout           ;
+; |DistributeurCafe|Add1~5                 ; |DistributeurCafe|Add1~6                 ; cout             ;
+; |DistributeurCafe|Add2~1                 ; |DistributeurCafe|Add2~1                 ; sumout           ;
+; |DistributeurCafe|Add2~1                 ; |DistributeurCafe|Add2~2                 ; cout             ;
+; |DistributeurCafe|Add0~5                 ; |DistributeurCafe|Add0~5                 ; sumout           ;
+; |DistributeurCafe|Add0~5                 ; |DistributeurCafe|Add0~6                 ; cout             ;
+; |DistributeurCafe|Add1~9                 ; |DistributeurCafe|Add1~9                 ; sumout           ;
+; |DistributeurCafe|Add1~9                 ; |DistributeurCafe|Add1~10                ; cout             ;
+; |DistributeurCafe|Add2~5                 ; |DistributeurCafe|Add2~5                 ; sumout           ;
+; |DistributeurCafe|Add2~5                 ; |DistributeurCafe|Add2~6                 ; cout             ;
+; |DistributeurCafe|Add0~9                 ; |DistributeurCafe|Add0~9                 ; sumout           ;
+; |DistributeurCafe|Add0~9                 ; |DistributeurCafe|Add0~10                ; cout             ;
+; |DistributeurCafe|Add1~13                ; |DistributeurCafe|Add1~13                ; sumout           ;
+; |DistributeurCafe|Add1~13                ; |DistributeurCafe|Add1~14                ; cout             ;
+; |DistributeurCafe|Add2~9                 ; |DistributeurCafe|Add2~9                 ; sumout           ;
+; |DistributeurCafe|Add2~9                 ; |DistributeurCafe|Add2~10                ; cout             ;
+; |DistributeurCafe|Add0~13                ; |DistributeurCafe|Add0~13                ; sumout           ;
+; |DistributeurCafe|Add1~17                ; |DistributeurCafe|Add1~17                ; sumout           ;
+; |DistributeurCafe|Add1~17                ; |DistributeurCafe|Add1~18                ; cout             ;
+; |DistributeurCafe|Add2~13                ; |DistributeurCafe|Add2~13                ; sumout           ;
+; |DistributeurCafe|Add2~13                ; |DistributeurCafe|Add2~14                ; cout             ;
+; |DistributeurCafe|Add1~21                ; |DistributeurCafe|Add1~21                ; sumout           ;
+; |DistributeurCafe|Add2~17                ; |DistributeurCafe|Add2~17                ; sumout           ;
+; |DistributeurCafe|Add2~17                ; |DistributeurCafe|Add2~18                ; cout             ;
+; |DistributeurCafe|Add2~21                ; |DistributeurCafe|Add2~21                ; sumout           ;
+; |DistributeurCafe|Add4~5                 ; |DistributeurCafe|Add4~5                 ; sumout           ;
+; |DistributeurCafe|Add4~5                 ; |DistributeurCafe|Add4~6                 ; cout             ;
+; |DistributeurCafe|Add4~9                 ; |DistributeurCafe|Add4~9                 ; sumout           ;
+; |DistributeurCafe|Add4~9                 ; |DistributeurCafe|Add4~10                ; cout             ;
+; |DistributeurCafe|Add4~13                ; |DistributeurCafe|Add4~13                ; sumout           ;
+; |DistributeurCafe|Add4~13                ; |DistributeurCafe|Add4~14                ; cout             ;
+; |DistributeurCafe|Add4~17                ; |DistributeurCafe|Add4~17                ; sumout           ;
+; |DistributeurCafe|Add4~17                ; |DistributeurCafe|Add4~18                ; cout             ;
+; |DistributeurCafe|Add4~21                ; |DistributeurCafe|Add4~21                ; sumout           ;
+; |DistributeurCafe|Add4~21                ; |DistributeurCafe|Add4~22                ; cout             ;
+; |DistributeurCafe|Add4~25                ; |DistributeurCafe|Add4~25                ; sumout           ;
+; |DistributeurCafe|Add4~25                ; |DistributeurCafe|Add4~26                ; cout             ;
+; |DistributeurCafe|Add4~29                ; |DistributeurCafe|Add4~29                ; sumout           ;
+; |DistributeurCafe|Add4~29                ; |DistributeurCafe|Add4~30                ; cout             ;
+; |DistributeurCafe|Add4~33                ; |DistributeurCafe|Add4~33                ; sumout           ;
+; |DistributeurCafe|Add4~33                ; |DistributeurCafe|Add4~34                ; cout             ;
+; |DistributeurCafe|Add4~37                ; |DistributeurCafe|Add4~37                ; sumout           ;
+; |DistributeurCafe|LessThan2~0            ; |DistributeurCafe|LessThan2~0            ; combout          ;
+; |DistributeurCafe|LessThan2~1            ; |DistributeurCafe|LessThan2~1            ; combout          ;
+; |DistributeurCafe|LessThan2~2            ; |DistributeurCafe|LessThan2~2            ; combout          ;
+; |DistributeurCafe|LessThan2~3            ; |DistributeurCafe|LessThan2~3            ; combout          ;
+; |DistributeurCafe|reste_argent~0         ; |DistributeurCafe|reste_argent~0         ; combout          ;
+; |DistributeurCafe|monnaie_insuffisante~0 ; |DistributeurCafe|monnaie_insuffisante~0 ; combout          ;
+; |DistributeurCafe|LessThan2~4            ; |DistributeurCafe|LessThan2~4            ; combout          ;
+; |DistributeurCafe|monnaie_exacte~0       ; |DistributeurCafe|monnaie_exacte~0       ; combout          ;
+; |DistributeurCafe|monnaie_exacte~1       ; |DistributeurCafe|monnaie_exacte~1       ; combout          ;
+; |DistributeurCafe|monnaie_excedentaire~0 ; |DistributeurCafe|monnaie_excedentaire~0 ; combout          ;
+; |DistributeurCafe|LessThan2~5            ; |DistributeurCafe|LessThan2~5            ; combout          ;
+; |DistributeurCafe|LessThan2~6            ; |DistributeurCafe|LessThan2~6            ; combout          ;
+; |DistributeurCafe|LessThan1~0            ; |DistributeurCafe|LessThan1~0            ; combout          ;
+; |DistributeurCafe|reste_argent~1         ; |DistributeurCafe|reste_argent~1         ; combout          ;
+; |DistributeurCafe|reste_argent~2         ; |DistributeurCafe|reste_argent~2         ; combout          ;
+; |DistributeurCafe|reste_argent~3         ; |DistributeurCafe|reste_argent~3         ; combout          ;
+; |DistributeurCafe|reste_argent~4         ; |DistributeurCafe|reste_argent~4         ; combout          ;
+; |DistributeurCafe|reste_argent~5         ; |DistributeurCafe|reste_argent~5         ; combout          ;
+; |DistributeurCafe|reste_argent~6         ; |DistributeurCafe|reste_argent~6         ; combout          ;
+; |DistributeurCafe|reste_argent~7         ; |DistributeurCafe|reste_argent~7         ; combout          ;
+; |DistributeurCafe|reste_argent~8         ; |DistributeurCafe|reste_argent~8         ; combout          ;
+; |DistributeurCafe|reste_argent~9         ; |DistributeurCafe|reste_argent~9         ; combout          ;
+; |DistributeurCafe|cafe_pret              ; |DistributeurCafe|cafe_pret              ; padio            ;
+; |DistributeurCafe|monnaie_insuffisante   ; |DistributeurCafe|monnaie_insuffisante   ; padio            ;
+; |DistributeurCafe|monnaie_exacte         ; |DistributeurCafe|monnaie_exacte         ; padio            ;
+; |DistributeurCafe|monnaie_excedentaire   ; |DistributeurCafe|monnaie_excedentaire   ; padio            ;
+; |DistributeurCafe|delivrance_cafe        ; |DistributeurCafe|delivrance_cafe        ; padio            ;
+; |DistributeurCafe|reste_monnaie[0]       ; |DistributeurCafe|reste_monnaie[0]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[1]       ; |DistributeurCafe|reste_monnaie[1]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[2]       ; |DistributeurCafe|reste_monnaie[2]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[3]       ; |DistributeurCafe|reste_monnaie[3]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[4]       ; |DistributeurCafe|reste_monnaie[4]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[5]       ; |DistributeurCafe|reste_monnaie[5]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[6]       ; |DistributeurCafe|reste_monnaie[6]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[7]       ; |DistributeurCafe|reste_monnaie[7]       ; padio            ;
+; |DistributeurCafe|reste_monnaie[8]       ; |DistributeurCafe|reste_monnaie[8]       ; padio            ;
+; |DistributeurCafe|bouton_sucre[1]        ; |DistributeurCafe|bouton_sucre[1]~corein ; combout          ;
+; |DistributeurCafe|piece_10_dh[0]         ; |DistributeurCafe|piece_10_dh[0]~corein  ; combout          ;
+; |DistributeurCafe|piece_5_dh[1]          ; |DistributeurCafe|piece_5_dh[1]~corein   ; combout          ;
+; |DistributeurCafe|piece_2_dh[0]          ; |DistributeurCafe|piece_2_dh[0]~corein   ; combout          ;
+; |DistributeurCafe|piece_1_dh[1]          ; |DistributeurCafe|piece_1_dh[1]~corein   ; combout          ;
+; |DistributeurCafe|piece_5_dh[0]          ; |DistributeurCafe|piece_5_dh[0]~corein   ; combout          ;
+; |DistributeurCafe|piece_1_dh[0]          ; |DistributeurCafe|piece_1_dh[0]~corein   ; combout          ;
+; |DistributeurCafe|piece_10_dh[1]         ; |DistributeurCafe|piece_10_dh[1]~corein  ; combout          ;
+; |DistributeurCafe|piece_2_dh[1]          ; |DistributeurCafe|piece_2_dh[1]~corein   ; combout          ;
+; |DistributeurCafe|piece_1_dh[2]          ; |DistributeurCafe|piece_1_dh[2]~corein   ; combout          ;
+; |DistributeurCafe|bouton_sucre[0]        ; |DistributeurCafe|bouton_sucre[0]~corein ; combout          ;
+; |DistributeurCafe|piece_2_dh[2]          ; |DistributeurCafe|piece_2_dh[2]~corein   ; combout          ;
+; |DistributeurCafe|piece_1_dh[3]          ; |DistributeurCafe|piece_1_dh[3]~corein   ; combout          ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |DistributeurCafe|Add3~5                     ; |DistributeurCafe|Add3~6                     ; cout             ;
+; |DistributeurCafe|Add3~9                     ; |DistributeurCafe|Add3~9                     ; sumout           ;
+; |DistributeurCafe|Add3~9                     ; |DistributeurCafe|Add3~10                    ; cout             ;
+; |DistributeurCafe|Add3~13                    ; |DistributeurCafe|Add3~13                    ; sumout           ;
+; |DistributeurCafe|Add4~2                     ; |DistributeurCafe|Add4~2                     ; cout             ;
+; |DistributeurCafe|total_prix[3]~0            ; |DistributeurCafe|total_prix[3]~0            ; combout          ;
+; |DistributeurCafe|total_prix[4]~1            ; |DistributeurCafe|total_prix[4]~1            ; combout          ;
+; |DistributeurCafe|comb~1                     ; |DistributeurCafe|comb~1                     ; combout          ;
+; |DistributeurCafe|comb~2                     ; |DistributeurCafe|comb~2                     ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[0]~0 ; |DistributeurCafe|prix_cafe_selectionne[0]~0 ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[0]~1 ; |DistributeurCafe|prix_cafe_selectionne[0]~1 ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[1]   ; |DistributeurCafe|prix_cafe_selectionne[1]   ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[2]   ; |DistributeurCafe|prix_cafe_selectionne[2]   ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[3]   ; |DistributeurCafe|prix_cafe_selectionne[3]   ; combout          ;
+; |DistributeurCafe|bouton_cafe_lait           ; |DistributeurCafe|bouton_cafe_lait~corein    ; combout          ;
+; |DistributeurCafe|bouton_cafe_noir           ; |DistributeurCafe|bouton_cafe_noir~corein    ; combout          ;
+; |DistributeurCafe|bouton_espresso            ; |DistributeurCafe|bouton_espresso~corein     ; combout          ;
+; |DistributeurCafe|bouton_cappuccino          ; |DistributeurCafe|bouton_cappuccino~corein   ; combout          ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |DistributeurCafe|Add3~5                     ; |DistributeurCafe|Add3~6                     ; cout             ;
+; |DistributeurCafe|Add3~9                     ; |DistributeurCafe|Add3~10                    ; cout             ;
+; |DistributeurCafe|Add3~13                    ; |DistributeurCafe|Add3~13                    ; sumout           ;
+; |DistributeurCafe|Add4~2                     ; |DistributeurCafe|Add4~2                     ; cout             ;
+; |DistributeurCafe|total_prix[4]~1            ; |DistributeurCafe|total_prix[4]~1            ; combout          ;
+; |DistributeurCafe|comb~0                     ; |DistributeurCafe|comb~0                     ; combout          ;
+; |DistributeurCafe|comb~2                     ; |DistributeurCafe|comb~2                     ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[0]~0 ; |DistributeurCafe|prix_cafe_selectionne[0]~0 ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[0]~1 ; |DistributeurCafe|prix_cafe_selectionne[0]~1 ; combout          ;
+; |DistributeurCafe|prix_cafe_selectionne[2]   ; |DistributeurCafe|prix_cafe_selectionne[2]   ; combout          ;
+; |DistributeurCafe|reset                      ; |DistributeurCafe|reset~corein               ; combout          ;
+; |DistributeurCafe|bouton_cafe_lait           ; |DistributeurCafe|bouton_cafe_lait~corein    ; combout          ;
+; |DistributeurCafe|bouton_cafe_noir           ; |DistributeurCafe|bouton_cafe_noir~corein    ; combout          ;
+; |DistributeurCafe|bouton_espresso            ; |DistributeurCafe|bouton_espresso~corein     ; combout          ;
+; |DistributeurCafe|bouton_cappuccino          ; |DistributeurCafe|bouton_cappuccino~corein   ; combout          ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Tue Mar 26 11:09:44 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DistributeurCafe -c DistributeurCafe
+Info: Using vector source file "C:/altera/91/quartus/DistributeurCafe/DistributeurCafe.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      83.05 %
+Info: Number of transitions in simulation is 2109
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Tue Mar 26 11:09:44 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
